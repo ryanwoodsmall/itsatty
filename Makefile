@@ -7,7 +7,7 @@ libdir := $(prefix)/lib
 all: lib 
 
 lib: $(proj).c
-	$(CC) -shared -o $(lib) $(proj).c
+	$(CC) -shared -fPIC -o $(lib) $(proj).c
 
 install: lib
 	mkdir -p $(bindir)
