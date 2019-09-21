@@ -12,4 +12,4 @@ hash socat >/dev/null 2>&1 || {
   exit 1
 }
 
-socat SYSTEM:"${@}",pty STDIO
+eval "socat SYSTEM:'${@}',pty STDIO"
