@@ -13,4 +13,5 @@ install: lib
 	mkdir -p $(bindir)
 	mkdir -p $(libdir)
 	install -m 755 $(proj) $(bindir)/$(proj)
+	install -m 755 $(proj).sh $(bindir)/$(proj).sh
 	install -m 755 $(lib) $(libdir)/$(lib)
