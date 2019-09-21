@@ -4,4 +4,5 @@ topdir="$(cd $(dirname "${0}")/.. && pwd )"
 libdir="${topdir}/lib"
 solib="${libdir}/libitsatty.so"
 
-env LD_PRELOAD="${solib}" "${@}"
+export LD_PRELOAD="${solib}"
+"${@}"
