@@ -1,6 +1,6 @@
 #!/bin/sh
 
-topdir="$(cd $(dirname "${0}") && pwd )"
+topdir="$(cd $(dirname "${0}")/.. && pwd )"
 libdir="${topdir}/lib"
 solib="${libdir}/libitsatty.so"
 
